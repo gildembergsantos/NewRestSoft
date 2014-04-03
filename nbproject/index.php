@@ -16,7 +16,7 @@ and open the template in the editor.
         <?php
         // put your code here
         $db = new banco();
-        $db->adicionar("", "");
+        $db->atualizar('produto', '1', array('produto' => 'Teste', 'preco' => 20))
         ?>
     </body>
 </html>
