@@ -32,5 +32,6 @@ class banco {
         $sql = "INSERT INTO produto (produto, preco) VALUES(:p, :pr)";
         $stmt  = $pdo->prepare($sql);
         $stmt->bindValue(':p', 'Os Gonnies');
+        $stmt->bindValue('pr', 20);
     }
 }
